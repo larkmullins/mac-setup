@@ -44,10 +44,7 @@ brew tap caskroom/versions
 brew cask install --appdir="/Applications" hyper
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" toggl
 brew cask install --appdir="/Applications" visual-studio-code
-brew cask install --appdir="/Applications" sourcetree
-brew cask install --appdir="/Applications" sequel-pro
 
 # Add .hyperconfig to ~/
 cp -f cli/hyperconfig ~/.hyper.js

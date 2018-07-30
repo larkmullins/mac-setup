@@ -1,18 +1,26 @@
+[color]
+	ui = auto
 [core]
 	editor = code --wait
 	excludesfile = ~/.gitignore_global
+	whitespace = -trailing-space
 [diff]
+	mnemonicPrefix = true			# use better, descriptive initials (c, i, w) instead of a/b.
+	renames = true					# show renames/moves as such
     tool = default-difftool
 [difftool "default-difftool"]
     cmd = code --wait --diff $LOCAL $REMOTE
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+[log]
+	abbrevCommit = true				# Use abbrev SHAs whenever possible/relevant instead of full 40 chars
+	follow = true					# Automatically --follow when given a single path
+[push]
+	default = upstream
+	followTags = true
+[status]
+	# Display submodule rev change summaries in status
+	submoduleSummary = true
+	# Recursively traverse untracked directories to display all contents
+	showUntrackedFiles = all
 [user]
-	name = Wil Goolsby
-	email = wil@wilgoolsby.com
-[includeIf "gitdir:~/development/pathwayre/"]
-    path = ~/development/pathwayre/.gitconfig
+	name = Lark Mullins
+	email = larkmullins@gmail.com

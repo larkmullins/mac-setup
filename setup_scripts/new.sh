@@ -38,22 +38,6 @@ function setupMac() {
             echo ""
             sh setup_scripts/brew.sh
         fi
-        if [ $ARG == "web" ] || [ $ARG == "all" ]; then
-            # Run the web.sh Script
-            echo "------------------------------"
-            echo "Setting up JavaScript web development environment."
-            echo "------------------------------"
-            echo ""
-            sh setup_scripts/web.sh
-        fi
-        if [ $ARG == "mas" ] || [ $ARG == "all" ]; then
-            # Run the mas.sh Script
-            echo "------------------------------"
-            echo "Installing Apps from the Mac App Store."
-            echo "------------------------------"
-            echo ""
-            sh setup_scripts/mas.sh
-        fi
         if [ $ARG == "zsh" ] || [ $ARG == "all" ]; then
             # Run the zsh.sh Script
             echo "------------------------------"

@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "'Fira Code iScript'",
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
